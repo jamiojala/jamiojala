@@ -16,7 +16,7 @@ I’m a founder-operator in Espoo, Finland. I turn messy work across finance, go
 
 ## `01 / CURRENT TRANSMISSION`
 
-- `BUILD` **[Vantnod](https://vantnod.com/en)**, a Finland-first company operating system. Bookkeeping is live. Studio is in a controlled pilot.
+- `BUILD` **[Vantnod](https://vantnod.com/en)**, a Finland-first company operating system in pre-launch development. Core accounting flows are implemented; public release is targeted for Q3–Q4 2026.
 - `OPERATE` **[Impact Node](https://impactnode.fi/en)**, where I help teams decide what AI should change, then ship the systems that make it real.
 - `PUBLISH` small, sharp infrastructure for structured output, model routing, evaluation, and agent workflows.
 

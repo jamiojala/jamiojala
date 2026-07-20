@@ -85,5 +85,5 @@
 
   <rect x="126" y="916" width="548" height="53" rx="9" fill="#0d131a" stroke="#2f3b31"/><text x="144" y="937" class="mono" font-size="8" fill="#607063">OUTPUT / VERIFIED</text><text x="144" y="956" class="mono" font-size="11" fill="#dce5df">WORKING SYSTEM</text><text x="652" y="951" text-anchor="end" class="mono" font-size="10" fill="#b4ff68">SHIP ↗</text>
   <rect x="126" y="968" width="548" height="2" fill="#18231d"/><rect x="126" y="968" width="548" height="2" fill="url(#signal)" class="bar"/>
-  <path d="M24 1017H776" stroke="#252c39"/><text x="50" y="1041" class="mono" font-size="9" fill="#55e7ff">VANTNOD: LIVE</text><text x="264" y="1041" class="mono" font-size="9" fill="#9a84ff">OPEN SOURCE: ACTIVE</text><text x="565" y="1041" class="mono" font-size="9" fill="#b4ff68">ESPOO, FINLAND</text>
+  <path d="M24 1017H776" stroke="#252c39"/><text x="50" y="1041" class="mono" font-size="9" fill="#55e7ff">VANTNOD: PRE-LAUNCH</text><text x="264" y="1041" class="mono" font-size="9" fill="#9a84ff">OPEN SOURCE: ACTIVE</text><text x="565" y="1041" class="mono" font-size="9" fill="#b4ff68">ESPOO, FINLAND</text>
 </svg>
