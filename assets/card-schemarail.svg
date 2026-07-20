@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">SchemaRail</title><desc id="desc">Noisy model output becomes a validated typed object.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1017"/><stop offset="1" stop-color="#07090e"/></linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#55e7ff"/><stop offset="1" stop-color="#8d7cff"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#1a2230"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      text{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;letter-spacing:.1em}
+      .packet{animation:packet 3.2s cubic-bezier(.4,0,.2,1) infinite}.gate{animation:gate 2.4s ease-in-out infinite}.blink{animation:blink 2s steps(2,end) infinite}
+      @keyframes packet{0%{transform:translateX(0);opacity:0}15%{opacity:1}75%{opacity:1}100%{transform:translateX(182px);opacity:0}}@keyframes gate{0%,100%{opacity:.45}50%{opacity:1}}@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.28}}
+      @media(prefers-reduced-motion:reduce){.packet,.gate,.blink{animation:none!important}}
+    </style>
+  </defs>
+  <rect width="760" height="360" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="758" height="358" rx="21" fill="none" stroke="#273141"/><rect x="1" y="1" width="758" height="358" rx="21" fill="url(#grid)" opacity=".22"/>
+  <text x="34" y="43" class="mono" font-size="11" fill="#55e7ff">OPEN SYSTEM / 01</text><circle cx="706" cy="38" r="4" fill="#aaff72" class="blink"/><text x="693" y="42" text-anchor="end" class="mono" font-size="9" fill="#aaff72">VALID</text>
+  <text x="34" y="105" font-size="36" font-weight="780" letter-spacing="-1.4" fill="#f4f7fb">schemarail</text>
+  <text x="34" y="137" font-size="14" fill="#919bad">Noisy output → typed objects.</text>
+  <text x="34" y="191" class="mono" font-size="10" fill="#5e6a7c">DETERMINISTIC CORE</text><path d="M34 205H294" stroke="#263244"/>
+  <text x="34" y="232" font-size="12" fill="#c8ced9">extract</text><text x="112" y="232" fill="#485668">/</text><text x="132" y="232" font-size="12" fill="#c8ced9">validate</text><text x="218" y="232" fill="#485668">/</text><text x="238" y="232" font-size="12" fill="#c8ced9">repair</text>
+  <rect x="34" y="293" width="108" height="30" rx="15" fill="#101721" stroke="#26384a"/><text x="88" y="312" text-anchor="middle" class="mono" font-size="9" fill="#8fa1b6">TYPESCRIPT</text>
+  <rect x="151" y="293" width="103" height="30" rx="15" fill="#101721" stroke="#332d4d"/><text x="202" y="312" text-anchor="middle" class="mono" font-size="9" fill="#9e91c1">SCHEMAS</text>
+
+  <rect x="355" y="55" width="365" height="250" rx="16" fill="#090d13" stroke="#242e3c"/>
+  <text x="379" y="83" class="mono" font-size="9" fill="#5e6a7d">RAW / UNTRUSTED</text>
+  <rect x="378" y="101" width="146" height="120" rx="10" fill="#0f151e" stroke="#2b3544"/>
+  <text x="394" y="128" class="mono" font-size="10" fill="#9ca7b7">{ total:</text><text x="394" y="150" class="mono" font-size="10" fill="#ff8a7d">  "19,20?"</text><text x="394" y="172" class="mono" font-size="10" fill="#9ca7b7">  vat: ??</text><text x="394" y="194" class="mono" font-size="10" fill="#9ca7b7">}</text>
+  <path d="M550 94V237" stroke="#202a38" stroke-width="10"/><path d="M550 105V226" stroke="url(#rail)" stroke-width="2" class="gate"/>
+  <path d="M542 123H558M542 154H558M542 185H558M542 216H558" stroke="#55e7ff" opacity=".45"/>
+  <circle cx="510" cy="162" r="4" fill="#55e7ff" filter="url(#glow)" class="packet"/>
+  <rect x="580" y="101" width="116" height="120" rx="10" fill="#0d1716" stroke="#31513a"/>
+  <text x="596" y="128" class="mono" font-size="10" fill="#b9c7bd">{ total:</text><text x="596" y="150" class="mono" font-size="10" fill="#aaff72">  19.20,</text><text x="596" y="172" class="mono" font-size="10" fill="#b9c7bd">  vat: 24</text><text x="596" y="194" class="mono" font-size="10" fill="#b9c7bd">}</text>
+  <rect x="580" y="239" width="116" height="38" rx="9" fill="#101b15" stroke="#31513a"/><circle cx="596" cy="258" r="4" fill="#aaff72" filter="url(#glow)"/><text x="610" y="262" class="mono" font-size="9" fill="#aaff72">VALIDATED</text>
+</svg>
