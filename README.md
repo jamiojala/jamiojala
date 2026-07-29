@@ -1,68 +1,91 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-mobile-static.png">
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-desktop-static.png">
-  <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero-desktop.svg" width="100%" alt="Jami Ojala. Messy in. Systems out. An animated operator console turns people, money, data, and judgment into working systems.">
+  <source media="(max-width: 600px)" srcset="./assets/hero-doctrine-mobile.png">
+  <img
+    src="./assets/hero-doctrine.png"
+    width="100%"
+    alt="Jami Ojala. Founder, operator and product builder in Espoo, Finland. Trust before attention."
+  >
 </picture>
 
 <p align="center">
-  <a href="https://jamiojala.com/en"><strong>WORK TRAIL ↗</strong></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://impactnode.fi/en"><strong>IMPACT NODE ↗</strong></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://vantnod.com/en"><strong>VANTNOD ↗</strong></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/jamiojala"><strong>LINKEDIN ↗</strong></a>
+  <a href="https://jamiojala.com/en"><strong>WEBSITE</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://jamiojala.com/fi"><strong>SUOMEKSI</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://jamiojala.com/en/cv"><strong>CV</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://vantnod.com"><strong>VANTNOD</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://vantnodfoundry.com"><strong>FOUNDRY</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/jamiojala"><strong>LINKEDIN</strong></a>
 </p>
 
-I’m a founder-operator in Espoo, Finland. I turn messy work across finance, governance, and operations into software that people can actually trust and use.
+# Building durable products for difficult work.
 
-## `01 / CURRENT TRANSMISSION`
+## Rakennan kestäviä tuotteita vaikeaan työhön.
 
-- `BUILD` **[Vantnod](https://vantnod.com/en)**, a Finland-first company operating system in pre-launch development. Core accounting flows are implemented; public release is targeted for Q3–Q4 2026.
-- `OPERATE` **[Impact Node](https://impactnode.fi/en)**, where I help teams decide what AI should change, then ship the systems that make it real.
-- `PUBLISH` small, sharp infrastructure for structured output, model routing, evaluation, and agent workflows.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>EN</strong><br><br>
+      I’m Jami Ojala. I design products, operating systems and decision structures that make complex work clearer, more usable and easier to trace.
+      <br><br>
+      My work sits where software meets the way organisations actually operate. I move between product design, engineering, programmes and governance, keeping the system understandable from the interface to the decision trail.
+    </td>
+    <td width="50%" valign="top" lang="fi">
+      <strong>FI</strong><br><br>
+      Olen Jami Ojala. Suunnittelen tuotteita, toimintajärjestelmiä ja päätösrakenteita, jotka tekevät monimutkaisesta työstä selkeämpää, käytettävämpää ja helpommin jäljitettävää.
+      <br><br>
+      Työni sijoittuu ohjelmistojen ja organisaatioiden todellisen toiminnan väliin. Liikun tuotesuunnittelun, kehityksen, ohjelmien ja hallinnon välillä niin, että kokonaisuus pysyy ymmärrettävänä käyttöliittymästä päätösjälkeen.
+    </td>
+  </tr>
+</table>
 
-## `02 / PUBLIC SYSTEMS`
+## `01 / CURRENT WORK · TYÖN ALLA`
 
-<a href="https://github.com/jamiojala/schemarail">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/card-schemarail-static.png">
-    <img src="./assets/card-schemarail.svg" width="100%" alt="SchemaRail. Noisy model output becomes schema-validated TypeScript objects through deterministic extraction, validation, and optional repair.">
-  </picture>
-</a>
+### [Vantnod](https://vantnod.com)
 
-<a href="https://github.com/jamiojala/modelcade">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/card-modelcade-static.png">
-    <img src="./assets/card-modelcade.svg" width="100%" alt="Modelcade. One typed interface for multiple AI providers with streaming, tools, fallback routing, and attempt diagnostics.">
-  </picture>
-</a>
+Vantnod is a pre-launch accounting and company-work product for founders, freelancers and small companies. Aino suggests with sources and stated uncertainty. A person approves consequential decisions.
 
-<a href="https://github.com/jamiojala/evalrail">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/card-evalrail-static.png">
-    <img src="./assets/card-evalrail.svg" width="100%" alt="EvalRail. Local-first prompt tests, regression snapshots, provider comparisons, and CI-ready evidence.">
-  </picture>
-</a>
+<span lang="fi">Vantnod on ennen julkaisua oleva kirjanpidon ja yritystyön tuote perustajille, freelancereille ja pienille yrityksille. Aino tekee ehdotuksia lähteineen ja ilmaisee epävarmuuden. Merkittävät päätökset hyväksyy ihminen.</span>
 
-<a href="https://github.com/jamiojala/skillforge">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/card-skillforge-static.png">
-    <img src="./assets/card-skillforge.svg" width="100%" alt="SkillForge. A local-first MCP orchestration layer and portable skill library for multi-model workflows.">
-  </picture>
-</a>
+Access is currently by request. A request does not create a workspace, start a trial or create a charge.
 
-## `03 / OPERATING LOGIC`
+<span lang="fi">Pääsy avataan tällä hetkellä pyynnöstä. Pyyntö ei luo työtilaa, käynnistä kokeilua eikä aiheuta veloitusta.</span>
 
-AI handles ambiguity. Deterministic systems hold the line. Sources, uncertainty, and state stay visible. Humans keep consequential decisions. I ship one narrow loop, observe reality, then compound.
+### [Vantnod Foundry](https://vantnodfoundry.com)
 
-<details>
-  <summary><strong>Why the operator part matters</strong></summary>
-  <br>
-  That logic comes from outside code too: high-volume claims operations, national youth-work systems, and elected crisis governance. Real people, real money, imperfect data, little tolerance for opaque decisions.
-</details>
+Vantnod Foundry builds durable software, practical intelligence and reusable product foundations in Espoo. It is the public foundry brand operated by Impact Node Oy.
 
-## `04 / OPEN CHANNEL`
+<span lang="fi">Vantnod Foundry rakentaa Espoossa pitkäikäisiä ohjelmistoja, käytännöllistä älykkyyttä ja uudelleenkäytettäviä tuoteperustuksia. Se on Impact Node Oy:n operoima julkinen foundrybrändi.</span>
+
+## `02 / WORKING DOCTRINE · TOIMINTAPERIAATTEET`
+
+| Principle · Periaate | In practice · Käytännössä |
+| --- | --- |
+| **Operator first** | Start from the person doing the work and scale upward. Aloita työn tekijästä ja skaalaa ylöspäin. |
+| **Complexity stays inside the system** | Build the harder interior so the product can remain calm to use. Rakenna vaativampi sisäinen järjestelmä, jotta käyttö pysyy rauhallisena. |
+| **Automate the work, never the accountability** | Assistance needs sources, visible uncertainty and meaningful human approval. Avustaminen tarvitsee lähteet, näkyvän epävarmuuden ja aidon ihmisen hyväksynnän. |
+| **Trust before attention** | Say what is built, what is in pilot, what is preview and what is still coming. Kerro erikseen, mikä on rakennettu, pilotissa, esikatselussa tai vasta tulossa. |
+| **Data is entrusted, never owned** | Customer records are held in stewardship. Asiakkaan tietoja säilytetään luottamustehtävänä, ei omaisuutena. |
+
+## `03 / PUBLIC SYSTEMS · AVOIMET JÄRJESTELMÄT`
+
+| Project | What it holds |
+| --- | --- |
+| **[SchemaRail](https://github.com/jamiojala/schemarail)** | A schema-first guardrail that turns noisy model responses into validated TypeScript-safe objects. |
+| **[Modelcade](https://github.com/jamiojala/modelcade)** | A provider-agnostic TypeScript SDK with normalized streaming, tool use and fallback routing. |
+| **[EvalRail](https://github.com/jamiojala/evalrail)** | Local-first prompt tests, regression snapshots and provider comparisons. |
+| **[SkillForge](https://github.com/jamiojala/skillforge)** | Local-first MCP orchestration and a portable skill library for multi-model workflows. |
+
+## `04 / OPEN CHANNEL · YHTEYS`
 
 **Have a difficult system to make usable?**<br>
-[jami@impactnode.fi](mailto:jami@impactnode.fi) · [full work trail](https://jamiojala.com/en)
+**Onko sinulla vaikea järjestelmä, josta pitäisi tehdä käytettävä?**
 
-<sub>Built from Espoo, Finland · Finnish / English · Source over theatre</sub>
+[jami@vantnodfoundry.com](mailto:jami@vantnodfoundry.com) · [full CV](https://jamiojala.com/en/cv) · [LinkedIn](https://www.linkedin.com/in/jamiojala)
+
+<p align="center">
+  <sub>Jami Ojala · Espoo, Finland · Finnish / English · Trust before attention</sub>
+</p>
