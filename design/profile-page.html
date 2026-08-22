@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000, initial-scale=1" />
+    <title>Jami Ojala | GitHub profile artwork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;650;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Seona Display";
+        src: url("https://jamiojala.com/fonts/seona-display/Seona-Display.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 300 900;
+        font-display: swap;
+      }
+
+      :root {
+        --paper: #eee8dc;
+        --paper-bright: #f7f3ea;
+        --paper-deep: #ddd4c5;
+        --ink: #18231e;
+        --ink-soft: rgba(24, 35, 30, 0.74);
+        --ink-muted: rgba(24, 35, 30, 0.58);
+        --rust: #8a4c2d;
+        --rust-soft: #c9a58e;
+        --line: rgba(24, 35, 30, 0.22);
+        --line-light: rgba(238, 232, 220, 0.2);
+        --display: "Hanken Grotesk", system-ui, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, monospace;
+        --signature: "Seona Display", "Hanken Grotesk", system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1000px;
+        height: 3210px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--paper);
+      }
+
+      body {
+        color: var(--ink);
+        font-family: var(--display);
+        text-rendering: optimizeLegibility;
+      }
+
+      .profile {
+        position: relative;
+        width: 1000px;
+        height: 3210px;
+        overflow: hidden;
+        background: var(--paper);
+      }
+
+      .hairline {
+        border-color: var(--line);
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: var(--rust);
+        font: 700 15px/1.4 var(--mono);
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        position: relative;
+        display: grid;
+        height: 990px;
+        grid-template-rows: 110px 1fr 146px;
+        overflow: hidden;
+        border-bottom: 1px solid var(--line);
+        isolation: isolate;
+      }
+
+      .hero-media {
+        position: absolute;
+        z-index: -2;
+        inset: 0;
+        background-image: url("../../jamiojala/src/assets/archipelago-home.webp");
+        background-position: 58% 50%;
+        background-size: cover;
+        filter: saturate(0.82) contrast(0.98);
+        transform: scale(1.01);
+      }
+
+      .hero::before {
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(238, 232, 220, 0.99) 0%, rgba(238, 232, 220, 0.95) 44%, rgba(238, 232, 220, 0.72) 67%, rgba(238, 232, 220, 0.1) 100%),
+          linear-gradient(180deg, rgba(238, 232, 220, 0.12) 0%, rgba(238, 232, 220, 0.1) 64%, rgba(238, 232, 220, 0.86) 100%);
+        content: "";
+      }
+
+      .masthead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 58px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(238, 232, 220, 0.82);
+      }
+
+      .wordmark {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .wordmark-mark {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        border: 1px solid var(--ink);
+        font: 500 35px/1 var(--signature);
+      }
+
+      .wordmark-name {
+        font-size: 22px;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+      }
+
+      .masthead-meta {
+        color: var(--ink-soft);
+        font: 650 14px/1.4 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .hero-copy {
+        width: 720px;
+        align-self: center;
+        padding: 24px 58px 38px;
+      }
+
+      h1 {
+        max-width: 720px;
+        margin: 26px 0 30px;
+        font-size: 92px;
+        font-weight: 500;
+        letter-spacing: -0.061em;
+        line-height: 0.91;
+      }
+
+      .hero-body {
+        max-width: 660px;
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 27px;
+        line-height: 1.47;
+      }
+
+      .availability {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin: 30px 0 0;
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 650;
+      }
+
+      .availability-dot {
+        width: 11px;
+        height: 11px;
+        background: var(--rust);
+        box-shadow: 0 0 0 7px rgba(138, 76, 45, 0.13);
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+        border-top: 1px solid var(--line);
+        background: rgba(238, 232, 220, 0.89);
+      }
+
+      .fact {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 11px;
+        padding: 0 26px;
+        border-right: 1px solid var(--line);
+      }
+
+      .fact:last-child {
+        border-right: 0;
+      }
+
+      .fact dt,
+      .fact dd {
+        margin: 0;
+      }
+
+      .fact dt {
+        color: var(--ink-muted);
+        font: 650 13px/1.3 var(--mono);
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .fact dd {
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 650;
+        line-height: 1.25;
+      }
+
+      .stack {
+        height: 1040px;
+        padding: 68px 58px 58px;
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .stack .eyebrow {
+        color: var(--rust-soft);
+      }
+
+      .stack-heading {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 56px;
+        align-items: end;
+        margin-top: 22px;
+      }
+
+      .stack-heading h2 {
+        max-width: 590px;
+        margin: 0;
+        font-size: 70px;
+        font-weight: 500;
+        letter-spacing: -0.055em;
+        line-height: 0.94;
+      }
+
+      .stack-heading p {
+        margin: 0 0 5px;
+        color: rgba(238, 232, 220, 0.68);
+        font-size: 21px;
+        line-height: 1.5;
+      }
+
+      .stack-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 52px;
+        border: 1px solid rgba(238, 232, 220, 0.36);
+      }
+
+      .stack-card {
+        display: grid;
+        min-height: 300px;
+        grid-template-rows: auto auto 1fr auto;
+        padding: 31px 34px 28px;
+        border-right: 1px solid var(--line-light);
+        border-bottom: 1px solid var(--line-light);
+      }
+
+      .stack-card:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .stack-card:nth-child(n + 3) {
+        border-bottom: 0;
+      }
+
+      .stack-index {
+        color: rgba(238, 232, 220, 0.46);
+        font: 650 13px/1 var(--mono);
+        letter-spacing: 0.1em;
+      }
+
+      .stack-card h3 {
+        margin: 38px 0 15px;
+        font-size: 43px;
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 1;
+      }
+
+      .stack-card p {
+        max-width: 38ch;
+        margin: 0;
+        color: rgba(238, 232, 220, 0.7);
+        font-size: 19px;
+        line-height: 1.48;
+      }
+
+      .stack-card small {
+        margin-top: 25px;
+        padding-top: 17px;
+        border-top: 1px solid var(--line-light);
+        color: var(--rust-soft);
+        font: 600 14px/1.55 var(--mono);
+      }
+
+      .delivery-path {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 28px;
+        align-items: center;
+        min-height: 92px;
+        padding: 0 31px;
+        border: 1px solid rgba(238, 232, 220, 0.36);
+        border-top: 0;
+      }
+
+      .delivery-path span {
+        color: var(--rust-soft);
+        font: 650 13px/1.4 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .delivery-path p {
+        margin: 0;
+        color: var(--paper);
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+
+      .proof {
+        height: 980px;
+        padding: 68px 58px 58px;
+        background: var(--paper-bright);
+      }
+
+      .proof-heading {
+        display: grid;
+        grid-template-columns: 0.62fr 1.38fr;
+        gap: 46px;
+        align-items: end;
+      }
+
+      .proof-heading h2 {
+        margin: 0;
+        font-size: 66px;
+        font-weight: 500;
+        letter-spacing: -0.055em;
+        line-height: 0.94;
+      }
+
+      .proof-heading p:last-child {
+        max-width: 510px;
+        margin: 0 0 4px;
+        color: var(--ink-soft);
+        font-size: 20px;
+        line-height: 1.52;
+      }
+
+      .proof-grid {
+        display: grid;
+        height: 680px;
+        grid-template-columns: 1.18fr 0.82fr;
+        margin-top: 44px;
+        border: 1px solid var(--ink);
+      }
+
+      .case-primary {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 38px;
+        border-right: 1px solid var(--ink);
+      }
+
+      .case-meta,
+      .case-kicker {
+        color: var(--rust);
+        font: 650 13px/1.4 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .case-primary h3 {
+        margin: 62px 0 10px;
+        font-size: 82px;
+        font-weight: 500;
+        letter-spacing: -0.06em;
+        line-height: 0.9;
+      }
+
+      .case-role {
+        margin: 0;
+        color: var(--rust);
+        font: 700 14px/1.5 var(--mono);
+        letter-spacing: 0.055em;
+        text-transform: uppercase;
+      }
+
+      .case-body {
+        max-width: 51ch;
+        margin: 25px 0 0;
+        color: var(--ink-soft);
+        font-size: 19px;
+        line-height: 1.55;
+      }
+
+      .scope {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto 0 0;
+        padding: 0;
+        border-top: 1px solid var(--line);
+        list-style: none;
+      }
+
+      .scope li {
+        position: relative;
+        padding: 13px 8px 13px 17px;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink-soft);
+        font-size: 14px;
+        font-weight: 650;
+      }
+
+      .scope li::before {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background: var(--rust);
+        content: "";
+      }
+
+      .proof-rail {
+        display: grid;
+        grid-template-rows: 0.86fr 1.14fr;
+      }
+
+      .proof-card {
+        display: flex;
+        flex-direction: column;
+        padding: 31px 32px;
+      }
+
+      .proof-card:first-child {
+        border-bottom: 1px solid var(--ink);
+      }
+
+      .proof-card h3 {
+        margin: auto 0 14px;
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 1;
+      }
+
+      .proof-card p {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .proof-card small {
+        margin-top: 19px;
+        color: var(--rust);
+        font: 600 12px/1.55 var(--mono);
+      }
+
+      .repo-list {
+        display: grid;
+        margin: auto 0 0;
+        padding: 0;
+        border-top: 1px solid var(--line);
+        list-style: none;
+      }
+
+      .repo-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 11px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .repo-list strong {
+        font-size: 15px;
+        font-weight: 650;
+      }
+
+      .repo-list span {
+        color: var(--ink-muted);
+        font: 600 11px/1 var(--mono);
+        text-transform: uppercase;
+      }
+
+      .footer {
+        position: relative;
+        display: grid;
+        height: 200px;
+        grid-template-columns: 1.35fr 0.65fr;
+        align-items: center;
+        gap: 40px;
+        padding: 0 58px;
+        overflow: hidden;
+        background: var(--rust);
+        color: var(--paper-bright);
+      }
+
+      .footer::after {
+        position: absolute;
+        right: -70px;
+        bottom: -120px;
+        width: 300px;
+        height: 300px;
+        border: 1px solid rgba(247, 243, 234, 0.28);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 56px rgba(247, 243, 234, 0.05),
+          0 0 0 112px rgba(247, 243, 234, 0.035);
+        content: "";
+      }
+
+      .footer h2 {
+        max-width: 660px;
+        margin: 0;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: -0.048em;
+        line-height: 0.98;
+      }
+
+      .footer-meta {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        justify-items: start;
+        gap: 14px;
+      }
+
+      .footer-meta strong {
+        font-size: 20px;
+        font-weight: 650;
+      }
+
+      .footer-meta span {
+        color: rgba(247, 243, 234, 0.76);
+        font: 600 13px/1.5 var(--mono);
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="profile">
+      <section class="hero" aria-label="Jami Ojala, full-stack web developer and product builder">
+        <div class="hero-media" aria-hidden="true"></div>
+        <header class="masthead">
+          <div class="wordmark">
+            <span class="wordmark-mark" aria-hidden="true">J</span>
+            <strong class="wordmark-name">Jami Ojala</strong>
+          </div>
+          <span class="masthead-meta">Espoo, Finland · 60° 12′ N</span>
+        </header>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Full-stack web developer · Product builder</p>
+          <h1>I build web products from interface to production.</h1>
+          <p class="hero-body">
+            I turn a design or product problem into responsive UI, application logic, data flows,
+            integrations and a production release.
+          </p>
+          <p class="availability">
+            <span class="availability-dot" aria-hidden="true"></span>
+            Open to full-time, freelance and contract work
+          </p>
+        </div>
+
+        <dl class="facts">
+          <div class="fact">
+            <dt>Core</dt>
+            <dd>TypeScript · React · Next.js</dd>
+          </div>
+          <div class="fact">
+            <dt>Range</dt>
+            <dd>Frontend · Backend · Data</dd>
+          </div>
+          <div class="fact">
+            <dt>Focus</dt>
+            <dd>Product engineering</dd>
+          </div>
+          <div class="fact">
+            <dt>Delivery</dt>
+            <dd>Build · QA · Production</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="stack" aria-label="Full-stack development capabilities">
+        <p class="eyebrow">How I build · One owner across the stack</p>
+        <div class="stack-heading">
+          <h2>The stack serves the outcome.</h2>
+          <p>
+            Product judgement and implementation stay connected from the first component to the
+            production release.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card">
+            <span class="stack-index">01 / Interface</span>
+            <h3>Responsive UI</h3>
+            <p>Component systems, interaction states and accessible interfaces that hold together across devices.</p>
+            <small>Next.js · React · TypeScript · CSS</small>
+          </article>
+          <article class="stack-card">
+            <span class="stack-index">02 / Application</span>
+            <h3>Product logic</h3>
+            <p>Server-side logic, authentication and APIs that connect the product beyond the screen.</p>
+            <small>App Router · Auth · REST APIs</small>
+          </article>
+          <article class="stack-card">
+            <span class="stack-index">03 / Data</span>
+            <h3>Trusted flows</h3>
+            <p>Practical data models, tenant-aware flows and access controls designed with the product.</p>
+            <small>Supabase · PostgreSQL · RLS</small>
+          </article>
+          <article class="stack-card">
+            <span class="stack-index">04 / Delivery</span>
+            <h3>Production path</h3>
+            <p>Cross-device QA, debugging, deployment configuration and the final path to a live release.</p>
+            <small>Vercel · Cloudflare · Git · CI/CD</small>
+          </article>
+        </div>
+
+        <div class="delivery-path">
+          <span>Typical path</span>
+          <p>Direction → interface → logic → data → integrations → QA → production</p>
+        </div>
+      </section>
+
+      <section class="proof" aria-label="Selected build record">
+        <div class="proof-heading">
+          <p class="eyebrow">Selected build record</p>
+          <div>
+            <h2>Proof over labels.</h2>
+            <p>Founder work gives me direct responsibility for what reaches the browser and whether the release works.</p>
+          </div>
+        </div>
+
+        <div class="proof-grid">
+          <article class="case-primary">
+            <span class="case-meta">Case 01 · Active pre-launch product build</span>
+            <h3>Vantnod</h3>
+            <p class="case-role">Founder · Full-stack product builder</p>
+            <p class="case-body">
+              A company operating system beginning with financial truth. I work across product design,
+              frontend, backend, data, authentication, AI integrations and deployment.
+            </p>
+            <ul class="scope">
+              <li>Product interface</li>
+              <li>Application architecture</li>
+              <li>Data and integrations</li>
+              <li>AI-assisted workflows</li>
+              <li>Access and approvals</li>
+              <li>Deployment and iteration</li>
+            </ul>
+          </article>
+
+          <div class="proof-rail">
+            <article class="proof-card">
+              <span class="case-kicker">Case 02 · This site</span>
+              <h3>jamiojala.com</h3>
+              <p>Bilingual, responsive and built as one product surface from typography through routing and delivery.</p>
+              <small>Next.js 16 · React 19 · TypeScript · Vercel</small>
+            </article>
+
+            <article class="proof-card">
+              <span class="case-kicker">Public TypeScript work</span>
+              <h3>AI application rails</h3>
+              <p>Small, inspectable libraries for typed output, provider routing, evaluation and endpoint controls.</p>
+              <ul class="repo-list">
+                <li><strong>SchemaRail</strong><span>typed output</span></li>
+                <li><strong>Modelcade</strong><span>model routing</span></li>
+                <li><strong>EvalRail</strong><span>regression gates</span></li>
+                <li><strong>RouteGraft</strong><span>endpoint policy</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2>Let’s build something that needs to work.</h2>
+        <div class="footer-meta">
+          <strong>jamiojala.com/en</strong>
+          <span>GitHub / jamiojala<br />LinkedIn / jamiojala</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
